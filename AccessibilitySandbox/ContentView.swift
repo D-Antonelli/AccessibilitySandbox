@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Your score is")
+            Text("1000")
         }
-        .padding()
+        // either works
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Your score is 1000")
     }
 }
 
